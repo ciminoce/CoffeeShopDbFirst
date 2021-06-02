@@ -172,7 +172,7 @@ namespace CoffeeShopDbFirst.Windows.ProductTypes
                 using (var dbContext = new CoffeeShopDbContext())
                 {
                     dbContext.Entry(productType).State = EntityState.Deleted;
-                    dbContext.ProductTypes.Remove(productType);
+                    //dbContext.ProductTypes.Remove(productType);
                     dbContext.SaveChanges();
                 }
                 LoadProductTypes();
