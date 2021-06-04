@@ -70,6 +70,7 @@ namespace CoffeeShopDbFirst.Windows.Products
             // 
             // ProductTypesComboBox
             // 
+            this.ProductTypesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ProductTypesComboBox.FormattingEnabled = true;
             this.ProductTypesComboBox.Location = new System.Drawing.Point(133, 92);
             this.ProductTypesComboBox.Name = "ProductTypesComboBox";
@@ -107,6 +108,7 @@ namespace CoffeeShopDbFirst.Windows.Products
             this.OkButton.Text = "OK";
             this.OkButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.OkButton.UseVisualStyleBackColor = true;
+            this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
             // 
             // CancelarButton
             // 
@@ -118,6 +120,7 @@ namespace CoffeeShopDbFirst.Windows.Products
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // FrmProductsEdit
             // 

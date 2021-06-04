@@ -62,11 +62,11 @@
     <Compile Include="FrmCoffeeShopDashboard.Designer.cs">
       <DependentUpon>FrmCoffeeShopDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Products\FrmProducts.cs">
+    <Compile Include="Products\FrmManageProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Products\FrmProducts.Designer.cs">
-      <DependentUpon>FrmProducts.cs</DependentUpon>
+    <Compile Include="Products\FrmManageProducts.Designer.cs">
+      <DependentUpon>FrmManageProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="Products\FrmProductsEdit.cs">
       <SubType>Form</SubType>
@@ -85,8 +85,8 @@
     <EmbeddedResource Include="FrmCoffeeShopDashboard.resx">
       <DependentUpon>FrmCoffeeShopDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Products\FrmProducts.resx">
-      <DependentUpon>FrmProducts.cs</DependentUpon>
+    <EmbeddedResource Include="Products\FrmManageProducts.resx">
+      <DependentUpon>FrmManageProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products\FrmProductsEdit.resx">
       <DependentUpon>FrmProductsEdit.cs</DependentUpon>

@@ -57,6 +57,7 @@ namespace CoffeeShopDbFirst.Windows
             this.ManageProductsButton.TabIndex = 0;
             this.ManageProductsButton.Text = "Manage Products";
             this.ManageProductsButton.UseVisualStyleBackColor = true;
+            this.ManageProductsButton.Click += new System.EventHandler(this.ManageProductsButton_Click);
             // 
             // ManageProductTypesButton
             // 

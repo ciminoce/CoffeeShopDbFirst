@@ -1,7 +1,7 @@
 ﻿
 namespace CoffeeShopDbFirst.Windows.Products
 {
-    partial class FrmProducts
+    partial class FrmManageProducts
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace CoffeeShopDbFirst.Windows.Products
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.NewToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.DeleteToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -66,6 +67,7 @@ namespace CoffeeShopDbFirst.Windows.Products
             this.NewToolStripButton.Size = new System.Drawing.Size(44, 59);
             this.NewToolStripButton.Text = "New";
             this.NewToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.NewToolStripButton.Click += new System.EventHandler(this.NewToolStripButton_Click);
             // 
             // DeleteToolStripButton
             // 
@@ -76,6 +78,7 @@ namespace CoffeeShopDbFirst.Windows.Products
             this.DeleteToolStripButton.Size = new System.Drawing.Size(44, 59);
             this.DeleteToolStripButton.Text = "Delete";
             this.DeleteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.DeleteToolStripButton.Click += new System.EventHandler(this.DeleteToolStripButton_Click);
             // 
             // UpdateToolStripButton
             // 
@@ -86,6 +89,7 @@ namespace CoffeeShopDbFirst.Windows.Products
             this.UpdateToolStripButton.Size = new System.Drawing.Size(49, 59);
             this.UpdateToolStripButton.Text = "Update";
             this.UpdateToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.UpdateToolStripButton.Click += new System.EventHandler(this.UpdateToolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
@@ -136,20 +140,23 @@ namespace CoffeeShopDbFirst.Windows.Products
             // colPrice
             // 
             this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colPrice.DefaultCellStyle = dataGridViewCellStyle3;
             this.colPrice.HeaderText = "Price";
             this.colPrice.Name = "colPrice";
             this.colPrice.ReadOnly = true;
             this.colPrice.Width = 56;
             // 
-            // FrmProducts
+            // FrmManageProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 513);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "FrmProducts";
+            this.Name = "FrmManageProducts";
             this.Text = "FrmProducts";
+            this.Load += new System.EventHandler(this.FrmManageProducts_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

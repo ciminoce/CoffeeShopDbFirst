@@ -136,8 +136,17 @@ namespace CoffeeShopDbFirst.Windows.ProductTypes
                 {
                     using (var dbContext=new CoffeeShopDbContext())
                     {
+                        if (dbContext.ProductTypes.Any(pt=>pt.Description==productType.Description))
+                        {
+
+                            MessageBox.Show("Record Already exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            DescriptionTextBox.Focus();
+                            return;
+                        }
                         dbContext.ProductTypes.Add(productType);
-                        dbContext.SaveChanges();
+                            dbContext.SaveChanges();
+
+
                     }
                     LoadProductTypes();
                     MessageBox.Show(@"Record Added Successfully!!", "Message", MessageBoxButtons.OK,
@@ -171,9 +180,16 @@ namespace CoffeeShopDbFirst.Windows.ProductTypes
             {
                 using (var dbContext = new CoffeeShopDbContext())
                 {
+
+                    if (dbContext.Products.Any(p=>p.ProductTypeId==productType.ProductTypeId))
+                    {
+                        MessageBox.Show("Record with related ones", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+
+                    }
                     dbContext.Entry(productType).State = EntityState.Deleted;
-                    //dbContext.ProductTypes.Remove(productType);
-                    dbContext.SaveChanges();
+                        //dbContext.ProductTypes.Remove(productType);
+                        dbContext.SaveChanges();
                 }
                 LoadProductTypes();
                 MessageBox.Show(@"Record Deleted Successfully!!", "Message", MessageBoxButtons.OK,
