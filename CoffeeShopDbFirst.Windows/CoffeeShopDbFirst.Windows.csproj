@@ -62,6 +62,18 @@
     <Compile Include="FrmCoffeeShopDashboard.Designer.cs">
       <DependentUpon>FrmCoffeeShopDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Products\FrmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\FrmProducts.Designer.cs">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\FrmProductsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\FrmProductsEdit.Designer.cs">
+      <DependentUpon>FrmProductsEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductTypes\FrmManageProductTypes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCoffeeShopDashboard.resx">
       <DependentUpon>FrmCoffeeShopDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\FrmProducts.resx">
+      <DependentUpon>FrmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\FrmProductsEdit.resx">
+      <DependentUpon>FrmProductsEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductTypes\FrmManageProductTypes.resx">
       <DependentUpon>FrmManageProductTypes.cs</DependentUpon>
@@ -84,6 +102,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -104,6 +123,21 @@
       <Project>{89b0bf1f-a73f-47c8-aad0-ee1eff210056}</Project>
       <Name>CoffeeShopDbFirst.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_document_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_copy_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_28px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
